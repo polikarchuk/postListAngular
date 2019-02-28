@@ -10,7 +10,8 @@ export class PostService {
             map((posts: any[]) => {
                 return posts.map(post => {
                     return {
-                        title: post.title
+                        title: post.title,
+                        body: post.body,
                     };
                 });
             })
